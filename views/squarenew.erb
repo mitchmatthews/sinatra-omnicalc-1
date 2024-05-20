@@ -1,6 +1,18 @@
 <!--<h1>Calculate a square of a number</h1>-->
-<form action="/square/results">
+<!--<form action="/square/results">
   <label for="form1">Enter a number</label>
   <input id="form1" type="text" name="users_number">
+  <button>Calculate square</button>
+</form>-->
+
+<!-- squarenew.erb -->
+<h1>Calculate a square of a number</h1>
+<form action="/square/results" method="post" enctype="multipart/form-data">
+  <label for="form1">Enter a number</label>
+  <input id="form1" type="text" name="users_number">
+  <br>
+  <label for="file1">Upload files</label>
+  <input id="file1" type="file" name="uploaded_files[]" multiple>
+  <br>
   <button>Calculate square</button>
 </form>
