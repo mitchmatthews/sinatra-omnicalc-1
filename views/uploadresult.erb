@@ -1,0 +1,16 @@
+<!-- uoloadresult.erb -->
+<h1>Upload Result</h1>
+<p>File(s) uploaded.</p>
+
+<% if @uploaded_files && !@uploaded_files.empty? %>
+  <h2>Uploaded Files:</h2>
+  <ul>
+    <% @uploaded_files.each do |file| %>
+      <li><a href="/uploads/<%= file %>"><%= file %></a></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<a href="/upload/new">
+  Upload another file
+</a>

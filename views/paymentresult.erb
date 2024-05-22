@@ -1,0 +1,41 @@
+<!-- paymentresult.erb -->
+<h1>Payment Results</h1>
+
+<dl>
+  <dt>
+    APR
+  </dt>
+  <dd>
+    
+    <%=@APR%>%
+  </dd>  
+
+  <dt>
+    Number of Years
+  </dt>
+  <dd>
+    <%=@years%>
+  </dd>  
+
+  <dt>
+    Principal
+  </dt>
+  <dd>
+    <%=@pv_formatted%>
+    <%#= number_to_currency(@pv) %>
+  </dd>  
+
+  <dt>
+    Payment
+  </dt>
+  <dd>
+    <%=@pmt_formatted%>
+    <%#= number_to_currency(@pmt) %>
+  </dd>  
+
+
+</dl>
+
+<a href="/payment/new">
+  Calculate another payment
+</a>

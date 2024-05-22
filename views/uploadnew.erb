@@ -1,0 +1,9 @@
+<!-- uploadnew.erb -->
+<h1>Upload a file</h1>
+<form action="/upload/results" method="post" enctype="multipart/form-data">
+  <br>
+  <label for="file1">Upload files</label>
+  <input id="file1" type="file" name="uploaded_files[]" multiple>
+  <br>
+  <button>Upload File(s)</button>
+</form>
